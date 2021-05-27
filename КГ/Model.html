@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Веб-сайт о кристаллах</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+   	 <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    	<script src="gl-matrix-min.js" defer></script>
+    	<script src="main.js" defer></script>       
+    </head>
+    <body>
+        <ul class="nav" align = "center">
+            <li><a href="Index.html">Картинки</a></li>
+            <li><a href="Video.html">Видео</a></li>            
+            <li><a href="Model.html">Модель</a></li>  
+        </ul>	
+	<p align = "center">	
+	<button class="new" onclick="RotateX()">Повращать по X</button>		
+	<button class="new" onclick="RotateY()">Повращать по Y</button>	
+	<button class="new" onclick="RotateZ()">Повращать по Z</button>	
+	</p>
+	<canvas></canvas>		
+    <script>
+        const _c = document.getElementsByTagName('canvas')[0];
+        _c.width = window.innerWidth;
+        _c.height = window.innerHeight;
+    </script>
+    </body>
+</html>
